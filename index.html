@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online dengan Keranjang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Toko Online</h1>
+        <nav>
+            <ul>
+                
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+                <!-- Di navbar -->
+                <li><a href="keranjang.html" id="cart-icon" onclick="goToCart()">Keranjang</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="produk-container">
+            <div class="produk" id="produk-baju-batik-pria">
+                <img src="img/Baju Batik pria.jpeg" alt="baju batik pria">
+                <h3>Baju Batik Pria</h3>
+                <p>Rp200.000</p>
+                 <div class="button-wrapper">
+                <button class="btn-keranjang" onclick="addToCart('Baju Batik Pria', 200000)">Tambah ke Keranjang</button>
+                <button class="btn-beli" onclick="buyNow('Baju Batik Pria', 200000)">Beli Sekarang</button> <!-- Tombol Beli Sekarang -->
+            </div>
+        </div>
+            <div class="produk" id="produk-baju-batik-wanita">
+                <img src="img/baju batik wanita.jpeg" alt="baju batik wanita">
+                <h3>Baju Batik Wanita</h3>
+                <p>Rp150.000</p>
+                <div class="button-wrapper">
+                <button class="btn-keranjang" onclick="addToCart('Baju Batik Wanita', 150000)">Tambah ke Keranjang</button>
+                <button class="btn-beli" onclick="buyNow('Baju Batik Wanita', 150000)">Beli Sekarang</button> <!-- Tombol Beli Sekarang -->
+            </div>
+        </div>
+            <div class="produk" id="produk-baju-kaos">
+                <img src="img/baju kaos.jpeg" alt="baju kaos">
+                <h3>Baju Kaos</h3>
+                <p>Rp100.000</p>
+                <div class="button-wrapper">
+                <button class="btn-keranjang" onclick="addToCart('Baju Kaos', 100000)">Tambah ke Keranjang</button>
+                <button class="btn-beli" onclick="buyNow('Baju Kaos', 100000)">Beli Sekarang</button> <!-- Tombol Beli Sekarang -->
+            </div>
+        </div>
+            <div class="produk" id="produk-cardigan-rajut">
+                <img src="img/cardigan rajut.jpeg" alt="cardigan rajut">
+                <h3>Cardigan Rajut</h3>
+                <p>Rp200.000</p>
+                <div class="button-wrapper">
+                <button class="btn-keranjang" onclick="addToCart('Cardigan Rajut', 200000)">Tambah ke Keranjang</button>
+                <button class="btn-beli" onclick="buyNow('Cardigan Rajut', 200000)">Beli Sekarang</button> <!-- Tombol Beli Sekarang -->
+            </div>
+        </div>
+            <div class="produk" id="produk-celana-jins-wanita">
+                <img src="img/celana jins wanita.jpeg" alt="celana jins wanita">
+                <h3>Celana Jins Wanita</h3>
+                <p>Rp250.000</p>
+                <div class="button-wrapper">
+                <button class="btn-keranjang" onclick="addToCart('Celana Jins Wanita', 250000)">Tambah ke Keranjang</button>
+                <button class="btn-beli" onclick="buyNow('Celana Jins Wanita', 250000)">Beli Sekarang</button> <!-- Tombol Beli Sekarang -->
+            </div>
+        </div>
+            <div class="produk" id="produk-gamis">
+                <img src="img/gamis.jpeg" alt="gamis">
+                <h3>Gamis</h3>
+                <p>Rp300.000</p>
+                <div class="button-wrapper">
+                <button class="btn-keranjang" onclick="addToCart('Gamis', 300000)">Tambah ke Keranjang</button>
+                <button class="btn-beli" onclick="buyNow('Gamis', 300000)">Beli Sekarang</button> <!-- Tombol Beli Sekarang -->
+            </div>
+        </div>
+            <div class="produk" id="produk-kemeja-pria">
+                <img src="img/kemeja pria.jpeg" alt="kemeja pria">
+                <h3>Kemeja Pria</h3>
+                <p>Rp150.000</p>
+                <div class="button-wrapper">
+                <button class="btn-keranjang" onclick="addToCart('Kemeja Pria', 150000)">Tambah ke Keranjang</button>
+                <button class="btn-beli"onclick="buyNow('Kemeja Pria', 150000)">Beli Sekarang</button> <!-- Tombol Beli Sekarang -->
+            </div>
+        </div>
+            <div class="produk" id="produk-kemeja-wanita">
+                <img src="img/kemeja wanita.jpeg" alt="kemeja wanita">
+                <h3>Kemeja Wanita</h3>
+                <p>Rp200.000</p>
+                <div class="button-wrapper">
+                <button class="btn-keranjang" onclick="addToCart('Kemeja Wanita', 200000)">Tambah ke Keranjang</button>
+                <button class="btn-beli" onclick="buyNow('Kemeja Wanita', 200000)">Beli Sekarang</button> <!-- Tombol Beli Sekarang -->
+            </div>
+        </div>
+        <div class="produk" id="produk-kaos-crop-top">
+            <img src="img/kaos crop top.jpeg" alt="kaos crop top">
+            <h3>Kaos Crop Top</h3>
+            <p>Rp80.000</p>
+            <div class="button-wrapper">
+            <button class="btn-keranjang" onclick="addToCart('Kaos Crop Top', 80000)">Tambah ke Keranjang</button>
+            <button class="btn-beli" onclick="buyNow('Kaos Crop Top', 80000)">Beli Sekarang</button> <!-- Tombol Beli Sekarang -->
+        </div>
+    </div>
+    <div class="produk" id="produk-baju-krop-top">
+        <img src="img/baju krop top.jpeg" alt="baju krop top">
+        <h3>Baju Krop Top</h3>
+        <p>Rp100.000</p>
+        <div class="button-wrapper">
+        <button class="btn-keranjang" onclick="addToCart('Baju Krop Top', 100000)">Tambah ke Keranjang</button>
+        <button class="btn-beli" onclick="buyNow('Baju Krop Top',  100000)">Beli Sekarang</button> <!-- Tombol Beli Sekarang -->
+    </div>
+</div>
+<div class="produk" id="produk-baju-tidur">
+    <img src="img/baju tidur.jpeg" alt="baju tidur">
+    <h3>Baju Tidur</h3>
+    <p>Rp150.000</p>
+    <div class="button-wrapper">
+    <button class="btn-keranjang" onclick="addToCart('Baju Tidur', 150000)">Tambah ke Keranjang</button>
+    <button class="btn-beli" onclick="buyNow('Baju Tidur', 150000)">Beli Sekarang</button> <!-- Tombol Beli Sekarang -->
+</div>
+</div>
+<div class="produk" id="produk-blazer-wanita">
+    <img src="img/blezer wanita.jpeg" alt="blazer wanita">
+    <h3>Blazer Wanita</h3>
+    <p>Rp200.000</p>
+    <div class="button-wrapper">
+    <button class="btn-keranjang" onclick="addToCart('Blazer Wanita', 200000)">Tambah ke Keranjang</button>
+    <button class="btn-beli" onclick="buyNow('Blazer Wanita', 200000)">Beli Sekarang</button> <!-- Tombol Beli Sekarang -->
+</div>
+</div>
+<div class="produk" id="produk-jas-pria">
+    <img src="img/jas pria.jpeg" alt="jas pria">
+    <h3>Jas Pria</h3>
+    <p>Rp300.000</p>
+    <div class="button-wrapper">
+    <button class="btn-keranjang" onclick="addToCart('Jas Pria', 300000)">Tambah ke Keranjang</button>
+    <button class="btn-beli" onclick="buyNow('Jas Pria', 300000)">Beli Sekarang</button> <!-- Tombol Beli Sekarang -->
+</div>
+</div>
+<div class="produk" id="produk-kemeja-crop-top">
+    <img src="img/kemeja crop top.jpeg" alt="kemeja crop top">
+    <h3>Kemeja Crop Top</h3>
+    <p>Rp150.000</p>
+    <div class="button-wrapper">
+    <button class="btn-keranjang" onclick="addToCart('Kemeja Crop Top', 150000)">Tambah ke Keranjang</button>
+    <button class="btn-beli" onclick="buyNow('Kemeja Crop Top', 150000)">Beli Sekarang</button> <!-- Tombol Beli Sekarang -->
+</div>
+</div>
+<div class="produk" id="produk-kerudung-segi-empat">
+    <img src="img/kerudung segi empat.jpeg" alt="kerudung segi empat">
+    <h3>Kerudung Segi Empat</h3>
+    <p>Rp50.000</p>
+    <div class="button-wrapper">
+    <button class="btn-keranjang" onclick="addToCart('Kerudung Segi Empat', 50000)">Tambah ke Keranjang</button>
+    <button class="btn-beli" onclick="buyNow('Kerudung Segi Empat', 50000)">Beli Sekarang</button> <!-- Tombol Beli Sekarang -->
+</div>
+</div>
+<div class="produk" id="produk-pashmina kaos">
+    <img src="img/Pashmina Kaos.jpeg" alt="Pashmina Kaos">
+    <h3>Pashmina Kaos</h3>
+    <p>Rp50.000</p>
+    <div class="button-wrapper">
+    <button class="btn-keranjang" onclick="addToCart('Pashmina Kaos', 50000)">Tambah ke Keranjang</button>
+    <button class="btn-beli" onclick="buyNow('Pashmina Kaos', 50000)">Beli Sekarang</button> <!-- Tombol Beli Sekarang -->
+</div>
+</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Hilda Shop. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

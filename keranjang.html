@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Keranjang Belanja</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cart-section" class="cart">
+            <div id="cart-container">
+                <h2>Keranjang Belanja</h2>
+                <ul id="cart-items"></ul>
+                <p>Jumlah Produk: <span id="cart-count-section">0</span></p>
+                <p>Total: <span id="cart-total">Rp0</span></p>
+                <button id="clear-cart-btn" onclick="clearCart()">Hapus Semua</button>
+                <button id="checkout-btn">Beli Sekarang</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Toko Online. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
